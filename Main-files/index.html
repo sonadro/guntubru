@@ -25,7 +25,83 @@
     <div class="setup">
 
         <h2>Sette opp server</h2>
-        <p>Før man kan hoste noe på en webserver, så må man ha en webserver.</p>
+        <p>Før man kan hoste noe på en webserver, så må man ha en webserver.</p><br><br>
+
+        <label for="img71">Først må man gi serveren navn:</label><br><br>
+        <img name="img71" src="Bilder/Screenshot_71.png" alt="Gi serveren navn"><br><br>
+
+        <label for="img72">Velg disken serveren skal være på:</label><br><br>
+        <img name="img72" src="Bilder/Screenshot_72.png" alt="Velge disk"><br><br>
+
+        <label for="img73">Kompatibilitet; velg ESXi 6.7 and later</label><br><br>
+        <img name="img73" src="Bilder/Screenshot_73.png" alt="Velge kompatibilitet"><br><br>
+
+        <label for="img74">Velg operativsystem; Ubuntu Linux 64-bit</label><br><br>
+        <img name="img74" src="Bilder/Screenshot_74.png" alt="Velge operativsystem"><br><br>
+
+        <label for="img75">Husk å velge thin provisioning på disken, for å spare plass</label><br><br>
+        <img name="img75" src="Bilder/Screenshot_75.png" alt="Velg thin provisioning"><br><br>
+
+        <label for="img76">Velge nettverk:</label><br><br>
+        <img name="img76" src="Bilder/Screenshot_76.png" alt="Velge nettverk"><br>
+        <p>Velg ditt nettverk i menyen:</p>
+        <img src="Bilder/Screenshot_77.png" alt="Velge nettverk"><br>
+        <p>Pass på at connect at power on er på</p>
+        <img src="Bilder/Screenshot_78.png" alt="Connect at power on må være på"><br><br>
+
+        <label for="img79">Laste opp webserver:</label><br>
+        <p>Trykk på "Content Library ISO File"</p>
+        <img name="img79" src="Bilder/Screenshot_79.png" alt="Laste opp webserver fil"><br>
+        <p>Last opp ubuntu-20.04.3-live-server-amd64</p>
+        <img src="Bilder/Screenshot_80.png" alt="Last opp ubuntu web server"><br>
+        <p>Pass på at connect at power on også er skrudd på her</p>
+        <img src="Bilder/Screenshot_81.png" alt="Connect at power on skal være på"><br><br>
+
+        <label for="img83">Boot options: skru på force BIOS setup</label><br><br>
+        <img name="img83" src="Bilder/Screenshot_83.png" alt="Force BIOS setup på"><br><br>
+
+        <label for="img84">Start webserveren, naviger til "Boot" tab</label><br>
+        <p>Naviger til "Network boot from VMware VMXNET3</p>
+        <p>Trykk enter</p>
+        <img src="Bilder/Screenshot_84.png" alt="Naviger til boot tab"><br>
+        <p>Naviger til exit tab, naviger til Save Changes, og trykk enter</p>
+        <img src="Bilder/Screenshot_85.png" alt="Lagre endringer"><br>
+        <p>Trykk F10, og trykk save</p>
+        <img src="Bilder/Screenshot_87.png" alt="Trykk f10, og lagre"><br><br>
+
+        <label for="img88">Nå setter du opp webserveren med innstillingene du vil ha</label><br>
+        <p>Det anbefales å velge Engelsk språk første gang du setter opp webserveren, da det blir lettere å følge med.</p>
+        <img name="img88" src="Bilder/Screenshot_88.png" alt="Anbefalt språk er Engelsk"><br><br>
+
+        <label for="img92">Viktig: Sett opp ipv4 adresse</label><br>
+        <p>Trykk edit ipv4</p>
+        <img name="img92" src="Bilder/Screenshot_92.png" alt="Viktig: Sett opp ipv4 adresse"><br>
+        <p>Velg manuell</p>
+        <img src="Bilder/Screenshot_93.png" alt="Velg manuell"><br>
+        <p>Fyll ut din IP-adresse, trykk lagre</p>
+        <img src="Bilder/Screenshot_95.png" alt="Fyll ut IP-adresse"><br><br>
+
+        <label for="img96">Du skal ikke fylle ut proxy eller Ubuntu Archive Mirror</label><br><br>
+        <img name="img96" src="Bilder/Screenshot_96.png" alt="Ikke fyll ut Proxy"><br><br>
+        <img src="Bilder/Screenshot_97.png" alt="Ikke fyll ut Ubuntu Archive Mirror"><br>
+        <p>Trykk continue without updating</p>
+        <img src="Bilder/Screenshot_98.png" alt="Continue without updating"><br>
+        <p>Sjekk at instillingene stemmer</p>
+        <img src="Bilder/Screenshot_99.png" alt="Sjekk at instillingene stemmer"><br><br>
+
+        <label for="img100">Sjekk at Storage Configuration stemmer</label><br><br>
+        <img name="img100" src="Bilder/Screenshot_100.png" alt="Sjekk at Storage Configuration innstillinger stemmer"><br>
+        <p>Trykk continue, og confirm destructive action</p>
+        <img src="Bilder/Screenshot_101.png" alt="Confirm destructive action"><br>
+        <p>Lag brukernavn og passord</p>
+        <img src="Bilder/Screenshot_102.png" alt="Fyll ut brukernavn og passord"><br><br>
+
+        <label for="img103">VIKTIG: Installer OpenSSH server</label><br><br>
+        <img name="img103" src="Bilder/Screenshot_103.png" alt="Installer OpenSSH server"><br>
+        <p>Du trenger ikke å installere noe på Featured Server Snaps, bare trykk done</p>
+
+        <label for="img105">Nå er Ubuntu installert!</label><br><br>
+        <img name="img105" src="Bilder/Screenshot_105.png" alt="Ubuntu er installert!"><br><br>
 
     </div>
 
