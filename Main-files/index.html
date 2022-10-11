@@ -160,53 +160,44 @@
         <p class="virtualHostKode">Laster tekst...</p><br>
         <p>Trykk CTRL-O for å lagre, og trykk CTRL-X for å lukke filen.</p><br><br><br>
 
-        <label for="img124">label</label><br><br>
-        <img name="img124" src="Bilder/Screenshot_124.png" alt=""><br><br>
+        <label for="img124">For å starte konfigurasjonsfilen, kjør kommando "sudo a2ensite domene-navn.conf"</label><br><br>
+        <img name="img124" src="Bilder/Screenshot_124.png" alt="Kjør sudo a2ensite domene-navn.conf"><br><br>
 
-        <label for="img125"></label><br><br>
-        <img name="img125" src="Bilder/Screenshot_125.png" alt=""><br><br>
+        <label for="img125">Nå skal du skru av standard-konfigurasjonsfilen:</label><br><br>
+        <img name="img125" src="Bilder/Screenshot_125.png" alt="Kjør sudo a2dissite 000-default.conf"><br><br>
 
-        <label for="img126"></label><br><br>
-        <img name="img126" src="Bilder/Screenshot_126.png" alt=""><br><br>
+        <label for="img126">Restart apache for å aktivere den nye konfigurasjonsfilen</label><br><br>
+        <img name="img126" src="Bilder/Screenshot_126.png" alt="Kjør sudo systemctl restart apache2"><br><br>
 
-        <label for="img127"></label><br><br>
-        <img name="img127" src="Bilder/Screenshot_127.png" alt=""><br><br>
+        <label for="img127">Sjekk om det er noen konfigurasjonsfeil:</label><br><br>
+        <img name="img127" src="Bilder/Screenshot_127.png" alt="Kjør sudo apache2ctl configtest"><br><br>
 
-        <label for="img128"></label><br><br>
-        <img name="img128" src="Bilder/Screenshot_128.png" alt=""><br><br>
+        <label for="img129">Hvis du får denne feilen, kjør denne kommando:</label><br><br>
+        <img name="img129" src="Bilder/Screenshot_129.png" alt="Kjør sudo nano /etc/apache2/conf-available/servername.conf"><br><br>
 
-        <label for="img129"></label>
-        <img name="img129" src="Bilder/Screenshot_129.png" alt=""><br><br>
+        <label for="img128">Legg til denne linjen, bytt ut sonser.no med ditt eget domene-navn</label>
+        <img name="img128" src="Bilder/Screenshot_128.png" alt="Skriv ServerName domene-navn"><br><br>
 
-        <label for="img130"></label><br><br>
-        <img name="img130" src="Bilder/Screenshot_130.png" alt=""><br><br>
+        <label for="img131">Etter du har lagret & lukket filen, kjør denne kommandoen igjen</label><br><br>
+        <img name="img131" src="Bilder/Screenshot_131.png" alt="Kjør sudo apache2ctl configtest"><br><br>
 
-        <label for="img131"></label><br><br>
-        <img name="img131" src="Bilder/Screenshot_131.png" alt=""><br><br>
+        <label for="img132">Nå har vi ikke lenger noe feilmelding, så da kan du kjøre denne kommandoen for å restarte apache, og lagre endringene.</label><br><br>
+        <img name="img132" src="Bilder/Screenshot_132.png" alt="Kjør systemctl reload apache2"><br><br>
 
-        <label for="img132"></label><br><br>
-        <img name="img132" src="Bilder/Screenshot_132.png" alt=""><br><br>
+        <label for="img133">Nå kan du se din egen nettside ved å skrive inn domene-navnet ditt.</label><br><br>
+        <img name="img133" src="Bilder/Screenshot_133.png" alt="Åpne nettleseren din, og skriv inn ditt domene-navn"><br><br>
 
-        <label for="img133"></label><br><br>
-        <img name="img133" src="Bilder/Screenshot_133.png" alt=""><br><br>
+        <label for="img134">Bruk <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a> for å laste opp filene dine.<br><br>Trykk på new site, med protokoll SFTP. Host er IP-adressen til serveren din. På user og password, skriv inn brukernavn og passord på serveren.<br><br>Så trykker du på connect.</label><br><br>
+        <img name="img134" src="Bilder/Screenshot_134.png" alt="Hjelpe illustrasjon for instruksjonene over"><br><br>
 
-        <label for="img134"></label><br><br>
-        <img name="img134" src="Bilder/Screenshot_134.png" alt=""><br><br>
+        <label for="img135">Finn fram til /var/www/domene-navn/html</label><br><br>
+        <img name="img135" src="Bilder/Screenshot_135.png" alt="Hjelpe illustrasjon"><br><br>
 
-        <label for="img135"></label><br><br>
-        <img name="img135" src="Bilder/Screenshot_135.png" alt=""><br><br>
+        <label for="img138">Så finner du dine egne filer su vil laste opp. <br> Merk filene, og dra de over til server-vinduet til høyre.</label><br><br>
+        <img name="img138" src="Bilder/Screenshot_138.png" alt="Dra filene over til serveren"><br><br>
 
-        <label for="img136"></label><br><br>
-        <img name="img136" src="Bilder/Screenshot_136.png" alt=""><br><br>
-
-        <label for="img137"></label><br><br>
-        <img name="img137" src="Bilder/Screenshot_137.png" alt=""><br><br>
-
-        <label for="img138"></label><br><br>
-        <img name="img138" src="Bilder/Screenshot_138.png" alt=""><br><br>
-
-        <label for="img139"></label><br><br>
-        <img name="img139" src="Bilder/Screenshot_139.png" alt=""><br><br>
+        <label for="img139">Trykk på "Overwrite" og OK. Nå har du lastet opp din egen nettside til serveren!</label><br><br>
+        <img name="img139" src="Bilder/Screenshot_139.png" alt="Trykk på Overwrite og OK"><br><br>
 
     </div>
 

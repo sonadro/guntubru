@@ -28,7 +28,7 @@ div.apache {
 }
 
 div.setup img, div.apache img {
-    width: 100%;
+    width: 90%;
     max-width: 900px;
 }
 
@@ -40,4 +40,12 @@ p.htmlKode, p.virtualHostKode {
     margin: 0 auto;
     text-align: left;
     padding: 10px;
+}
+
+a {
+    color: cyan;
+}
+
+a:hover {
+    font-weight: bold;
 }
