@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
 
@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
     
@@ -43,18 +44,18 @@
         <img name="img75" src="Bilder/Screenshot_75.png" alt="Velg thin provisioning"><br><br>
 
         <label for="img76">Velge nettverk:</label><br><br>
-        <img name="img76" src="Bilder/Screenshot_76.png" alt="Velge nettverk"><br>
-        <p>Velg ditt nettverk i menyen:</p>
-        <img src="Bilder/Screenshot_77.png" alt="Velge nettverk"><br>
-        <p>Pass på at connect at power on er på</p>
+        <img name="img76" src="Bilder/Screenshot_76.png" alt="Velge nettverk"><br><br>
+        <p>Velg ditt nettverk i menyen:</p><br>
+        <img src="Bilder/Screenshot_77.png" alt="Velge nettverk"><br><br>
+        <p>Pass på at connect at power on er på</p><br>
         <img src="Bilder/Screenshot_78.png" alt="Connect at power on må være på"><br><br>
 
         <label for="img79">Laste opp webserver:</label><br>
-        <p>Trykk på "Content Library ISO File"</p>
-        <img name="img79" src="Bilder/Screenshot_79.png" alt="Laste opp webserver fil"><br>
-        <p>Last opp ubuntu-20.04.3-live-server-amd64</p>
-        <img src="Bilder/Screenshot_80.png" alt="Last opp ubuntu web server"><br>
-        <p>Pass på at connect at power on også er skrudd på her</p>
+        <p>Trykk på "Content Library ISO File"</p><br>
+        <img name="img79" src="Bilder/Screenshot_79.png" alt="Laste opp webserver fil"><br><br>
+        <p>Last opp ubuntu-20.04.3-live-server-amd64</p><br>
+        <img src="Bilder/Screenshot_80.png" alt="Last opp ubuntu web server"><br><br>
+        <p>Pass på at connect at power on også er skrudd på her</p><br>
         <img src="Bilder/Screenshot_81.png" alt="Connect at power on skal være på"><br><br>
 
         <label for="img83">Boot options: skru på force BIOS setup</label><br><br>
@@ -62,46 +63,150 @@
 
         <label for="img84">Start webserveren, naviger til "Boot" tab</label><br>
         <p>Naviger til "Network boot from VMware VMXNET3</p>
-        <p>Trykk enter</p>
-        <img src="Bilder/Screenshot_84.png" alt="Naviger til boot tab"><br>
-        <p>Naviger til exit tab, naviger til Save Changes, og trykk enter</p>
-        <img src="Bilder/Screenshot_85.png" alt="Lagre endringer"><br>
-        <p>Trykk F10, og trykk save</p>
+        <p>Trykk enter</p><br>
+        <img src="Bilder/Screenshot_84.png" alt="Naviger til boot tab"><br><br>
+        <p>Naviger til exit tab, naviger til Save Changes, og trykk enter</p><br>
+        <img src="Bilder/Screenshot_85.png" alt="Lagre endringer"><br><br>
+        <p>Trykk F10, og trykk save</p><br>
         <img src="Bilder/Screenshot_87.png" alt="Trykk f10, og lagre"><br><br>
 
         <label for="img88">Nå setter du opp webserveren med innstillingene du vil ha</label><br>
-        <p>Det anbefales å velge Engelsk språk første gang du setter opp webserveren, da det blir lettere å følge med.</p>
+        <p>Det anbefales å velge Engelsk språk første gang du setter opp webserveren, da det blir lettere å følge med.</p><br>
         <img name="img88" src="Bilder/Screenshot_88.png" alt="Anbefalt språk er Engelsk"><br><br>
 
         <label for="img92">Viktig: Sett opp ipv4 adresse</label><br>
-        <p>Trykk edit ipv4</p>
-        <img name="img92" src="Bilder/Screenshot_92.png" alt="Viktig: Sett opp ipv4 adresse"><br>
-        <p>Velg manuell</p>
-        <img src="Bilder/Screenshot_93.png" alt="Velg manuell"><br>
-        <p>Fyll ut din IP-adresse, trykk lagre</p>
+        <p>Trykk edit ipv4</p><br>
+        <img name="img92" src="Bilder/Screenshot_92.png" alt="Viktig: Sett opp ipv4 adresse"><br><br>
+        <p>Velg manuell</p><br>
+        <img src="Bilder/Screenshot_93.png" alt="Velg manuell"><br><br>
+        <p>Fyll ut din IP-adresse, trykk lagre</p><br>
         <img src="Bilder/Screenshot_95.png" alt="Fyll ut IP-adresse"><br><br>
 
         <label for="img96">Du skal ikke fylle ut proxy eller Ubuntu Archive Mirror</label><br><br>
         <img name="img96" src="Bilder/Screenshot_96.png" alt="Ikke fyll ut Proxy"><br><br>
-        <img src="Bilder/Screenshot_97.png" alt="Ikke fyll ut Ubuntu Archive Mirror"><br>
-        <p>Trykk continue without updating</p>
-        <img src="Bilder/Screenshot_98.png" alt="Continue without updating"><br>
-        <p>Sjekk at instillingene stemmer</p>
+        <img src="Bilder/Screenshot_97.png" alt="Ikke fyll ut Ubuntu Archive Mirror"><br><br>
+        <p>Trykk continue without updating</p><br>
+        <img src="Bilder/Screenshot_98.png" alt="Continue without updating"><br><br>
+        <p>Sjekk at instillingene stemmer</p><br>
         <img src="Bilder/Screenshot_99.png" alt="Sjekk at instillingene stemmer"><br><br>
 
         <label for="img100">Sjekk at Storage Configuration stemmer</label><br><br>
-        <img name="img100" src="Bilder/Screenshot_100.png" alt="Sjekk at Storage Configuration innstillinger stemmer"><br>
-        <p>Trykk continue, og confirm destructive action</p>
-        <img src="Bilder/Screenshot_101.png" alt="Confirm destructive action"><br>
-        <p>Lag brukernavn og passord</p>
+        <img name="img100" src="Bilder/Screenshot_100.png" alt="Sjekk at Storage Configuration innstillinger stemmer"><br><br>
+        <p>Trykk continue, og confirm destructive action</p><br>
+        <img src="Bilder/Screenshot_101.png" alt="Confirm destructive action"><br><br>
+        <p>Lag brukernavn og passord</p><br>
         <img src="Bilder/Screenshot_102.png" alt="Fyll ut brukernavn og passord"><br><br>
 
         <label for="img103">VIKTIG: Installer OpenSSH server</label><br><br>
-        <img name="img103" src="Bilder/Screenshot_103.png" alt="Installer OpenSSH server"><br>
-        <p>Du trenger ikke å installere noe på Featured Server Snaps, bare trykk done</p>
+        <img name="img103" src="Bilder/Screenshot_103.png" alt="Installer OpenSSH server"><br><br>
+        <p>Du trenger ikke å installere noe på Featured Server Snaps, bare trykk done</p><br>
 
         <label for="img105">Nå er Ubuntu installert!</label><br><br>
         <img name="img105" src="Bilder/Screenshot_105.png" alt="Ubuntu er installert!"><br><br>
+
+    </div>
+
+    <div class="apache">
+
+        <br><br><h2>Laste ned og sette opp Apache:</h2><br><br>
+        <label for="img107">Åpne Windows Powershell, og bruk ssh ditt-brukernavn@din_ip-adresse, og trykk enter. Skriv inn passord:</label><br><br>
+        <img width="600px" name="img107" src="Bilder/Screenshot_107.png" alt="Windows Powershell: Koble til serveren din"><br><br>
+
+        <label for="img108">Bruk kommandoen sudo su, så slipper du å skrive passordet ditt hver gang du gjør en sudo kommando:</label><br><br>
+        <img name="img108" src="Bilder/Screenshot_108.png" alt="Kommando sudo su: skriv in passord"><br><br>
+
+        <label for="img109">Kjør sudo apt update, for å oppdatere systemet. Da kan vi få den nyeste versjonen av Apache2</label><br><br>
+        <img name="img109" src="Bilder/Screenshot_109.png" alt="Kjør sudo apt update"><br><br>
+
+        <label for="img110">Kjør sudo apt install apache2, for å laste ned apache</label><br><br>
+        <img name="img110" src="Bilder/Screenshot_110.png" alt="Kjør sudo apt install apache2"><br><br>
+
+        <label for="img111">Du vil få et varsel som sier hvor mye lagring som vil bli brukt, trykk y og enter, for å fortsette</label><br><br>
+        <img name="img111" src="Bilder/Screenshot_111.png" alt="Varsel om hvor mye lagring blir brukt. Skriv 'y', og trykk enter."><br><br>
+
+        <label for="img112">Sjekk at du har riktig verson av apache med kommando apache2 -version</label><br><br>
+        <img name="img112" src="Bilder/Screenshot_112.png" alt="Her skal du ha server version: Apache2/2.4.41 (Ubuntu)"><br><br>
+
+        <label for="img114">Kommando sudo ufw allow 'Apache' lar apache bruke nettverk på port 80.</label><br><br>
+        <img name="img114" src="Bilder/Screenshot_114.png" alt="Kjør sudo ufw allow 'Apache'"><br><br>
+
+        <label for="img115">Sjekk status: sudo ufw status</label><br><br>
+        <img name="img115" src="Bilder/Screenshot_115.png" alt="Melding om status: inaktiv"><br><br>
+
+        <label for="img116">Sjekk at apache-serveren fungerer: sudo systemctl status apache2</label><br><br>
+        <img name="img116" src="Bilder/Screenshot_116.png" alt="Her burde det stå 'Active: active (running)' i grønn tekst"><br><br>
+
+        <label for="img117">Sjekk hva ip-adressen til serveren er, med hostname -I</label><br><br>
+        <img name="img117" src="Bilder/Screenshot_117.png" alt="Kommandoen returnerer ip-adressen til serveren"><br><br>
+
+        <label for="img118">Lag en ny directory, bytt "sonser.no" med ditt domene-navn:</label><br><br>
+        <img name="img118" src="Bilder/Screenshot_118.png" alt="Kjør sudo mkdir -p /var/www/domene-navn/html"><br><br>
+
+        <label for="img119">Bytt eieren av directory med nåværenede bruker:</label><br><br>
+        <img name="img119" src="Bilder/Screenshot_119.png" alt="Kjør sudo chown - R $USER:$USER /var/www/domene-navn/html"><br><br>
+
+        <label for="img120">Angi nødvendige tillatelser: sudo chmod -R 755 /var/www/domene-navn</label><br><br>
+        <img name="img120" src="Bilder/Screenshot_120.png" alt="Kjør sudo chmod -R 755 /var/www/domene-navn"><br><br>
+
+        <label for="img122">Nå skal vi lage en eksempel-side for serveren. Start med å lage en html-fil:</label><br><br>
+        <img name="img122" src="Bilder/Screenshot_122.png" alt="Kjør nano /var/www/domene-navn/html/index.html"><br><br>
+        <p>Kopier disse linjene med HTML-kode:</p><br>
+        <p class="htmlKode">Laster tekst...</p><br><br>
+        <p>Når du har satt inn koden, trykk CTRL-O og så enter for å lagre. Trykk CTRL-X for å lukke filen.</p><br><br>
+
+        <label for="img123">Kjør sudo nano /etc/apache2/sites-available/domene-navn.conf</label><br><br>
+        <img name="img123" src="Bilder/Screenshot_123.png" alt="Se 'Kopier koden' under"><br><br>
+        <p>Kopier denne koden, pass på å bytte "domene-navn" med ditt domene navn:</p><br>
+        <p class="virtualHostKode">Laster tekst...</p><br>
+        <p>Trykk CTRL-O for å lagre, og trykk CTRL-X for å lukke filen.</p><br><br><br>
+
+        <label for="img124">label</label><br><br>
+        <img name="img124" src="Bilder/Screenshot_124.png" alt=""><br><br>
+
+        <label for="img125"></label><br><br>
+        <img name="img125" src="Bilder/Screenshot_125.png" alt=""><br><br>
+
+        <label for="img126"></label><br><br>
+        <img name="img126" src="Bilder/Screenshot_126.png" alt=""><br><br>
+
+        <label for="img127"></label><br><br>
+        <img name="img127" src="Bilder/Screenshot_127.png" alt=""><br><br>
+
+        <label for="img128"></label><br><br>
+        <img name="img128" src="Bilder/Screenshot_128.png" alt=""><br><br>
+
+        <label for="img129"></label>
+        <img name="img129" src="Bilder/Screenshot_129.png" alt=""><br><br>
+
+        <label for="img130"></label><br><br>
+        <img name="img130" src="Bilder/Screenshot_130.png" alt=""><br><br>
+
+        <label for="img131"></label><br><br>
+        <img name="img131" src="Bilder/Screenshot_131.png" alt=""><br><br>
+
+        <label for="img132"></label><br><br>
+        <img name="img132" src="Bilder/Screenshot_132.png" alt=""><br><br>
+
+        <label for="img133"></label><br><br>
+        <img name="img133" src="Bilder/Screenshot_133.png" alt=""><br><br>
+
+        <label for="img134"></label><br><br>
+        <img name="img134" src="Bilder/Screenshot_134.png" alt=""><br><br>
+
+        <label for="img135"></label><br><br>
+        <img name="img135" src="Bilder/Screenshot_135.png" alt=""><br><br>
+
+        <label for="img136"></label><br><br>
+        <img name="img136" src="Bilder/Screenshot_136.png" alt=""><br><br>
+
+        <label for="img137"></label><br><br>
+        <img name="img137" src="Bilder/Screenshot_137.png" alt=""><br><br>
+
+        <label for="img138"></label><br><br>
+        <img name="img138" src="Bilder/Screenshot_138.png" alt=""><br><br>
+
+        <label for="img139"></label><br><br>
+        <img name="img139" src="Bilder/Screenshot_139.png" alt=""><br><br>
 
     </div>
 

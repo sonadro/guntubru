@@ -8,7 +8,36 @@ header {
     text-align: center;
 }
 
-div.setup label {
-    font-size: 24px;
+div.setup {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div label, div p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 30px;
     font-weight: bold;
+}
+
+div.apache {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.setup img, div.apache img {
+    width: 100%;
+    max-width: 900px;
+}
+
+p.htmlKode, p.virtualHostKode {
+    background: #eee;
+    color: black;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
 }
