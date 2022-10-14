@@ -59,13 +59,14 @@ nav button {
 
 nav button:hover {
     color: white;
+    cursor: pointer;
     /* Gradient background */
     background: hsla(188, 100%, 27%, 1);
     background: linear-gradient(0deg, hsla(188, 100%, 27%, 1) 0%, hsla(200, 100%, 18%, 1) 100%);
     background: -moz-linear-gradient(0deg, hsla(188, 100%, 27%, 1) 0%, hsla(200, 100%, 18%, 1) 100%);
     background: -webkit-linear-gradient(0deg, hsla(188, 100%, 27%, 1) 0%, hsla(200, 100%, 18%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00798c", endColorstr="#003d5b", GradientType=1 );
-    }
+}
 
 h1 {
     font-family: "Overpass", Fallback, sans-serif;
