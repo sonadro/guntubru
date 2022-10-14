@@ -8,19 +8,21 @@ const vhKode = document.querySelector("p.virtualHostKode");
 const vhTekst = "<VirtualHost *: 80>\nServerAdmin brukernavn@domene-navn\nServername domene-navn\nServerAlias domene-navn\nDocumentRoot /var/www/domene-navn/html\nErrorLog ${APACHE_LOG_DIR}/error.log\nCustomLog ${APACHE_LOG_DIR}/access.log combined\n</VirtualHost>";
 vhKode.innerText = vhTekst;
 
-// Knapper
+// Navbar knapper
 const knapper = document.querySelector("div.items");
 
+//Scroller brukeren til riktig sted
 knapper.addEventListener("click", e => {
-    if (e.target.classList.value.includes("setup")) {
+    const classes = e.target.classList.value;
+    if (classes.includes("setup")) {
         scrollTo(0, 110);
-    } else if (e.target.classList.value.includes("install")) {
+    } else if (classes.includes("install")) {
         scrollTo(0, 3475);
-    } else if (e.target.classList.value.includes("apache")) {
+    } else if (classes.includes("apache")) {
         scrollTo(0, 14600);
-    } else if (e.target.classList.value.includes("template")) {
+    } else if (classes.includes("template")) {
         scrollTo(0, 16220);
-    } else if (e.target.classList.value.includes("upload")) {
+    } else if (classes.includes("upload")) {
         scrollTo(0, 18970);
     }
 });

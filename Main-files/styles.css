@@ -105,6 +105,10 @@ p, label {
     font-family: "Kreon", Fallback, sans-serif;
 }
 
+a {
+    color: cyan;
+}
+
 a:hover {
     font-weight: bold;
 }
