@@ -23,9 +23,22 @@
 
     </header>
 
+    <nav>
+
+        <div class="items">
+            <button class="setup">Sette opp server</button>
+            <button class="install">Installasjon av Ubuntu</button>
+            <button class="apache">Apache setup</button>
+            <button class="template">Lage en template-fil</button>
+            <button class="upload">Laste opp filer</button>
+        </div>
+
+    </nav>
+
     <div class="setup">
 
-        <h2>Sette opp server</h2>
+        <br>
+        <h2 id="setup">Sette opp server</h2><br>
         <p>Før man kan hoste noe på en webserver, så må man ha en webserver.</p><br><br>
 
         <label for="img71">Først må man gi serveren navn:</label><br><br>
@@ -61,6 +74,7 @@
         <label for="img83">Boot options: skru på force BIOS setup</label><br><br>
         <img name="img83" src="Bilder/Screenshot_83.png" alt="Force BIOS setup på"><br><br>
 
+        <h2 id="install">Innstallasjon av Ubuntu</h2><br>
         <label for="img84">Start webserveren, naviger til "Boot" tab</label><br>
         <p>Naviger til "Network boot from VMware VMXNET3</p>
         <p>Trykk enter</p><br>
@@ -108,7 +122,7 @@
 
     <div class="apache">
 
-        <br><br><h2>Laste ned og sette opp Apache:</h2><br><br>
+        <br><br><br><br><br><br><br><h2>Laste ned og sette opp Apache:</h2><br><br>
         <label for="img107">Åpne Windows Powershell, og bruk ssh ditt-brukernavn@din_ip-adresse, og trykk enter. Skriv inn passord:</label><br><br>
         <img width="600px" name="img107" src="Bilder/Screenshot_107.png" alt="Windows Powershell: Koble til serveren din"><br><br>
 
@@ -136,6 +150,8 @@
         <label for="img116">Sjekk at apache-serveren fungerer: sudo systemctl status apache2</label><br><br>
         <img name="img116" src="Bilder/Screenshot_116.png" alt="Her burde det stå 'Active: active (running)' i grønn tekst"><br><br>
 
+        <h2 id="template">Sette opp en template-fil for serveren</h2><br>
+        <p>Vi skal sette opp en template-fil for serveren nå, slik at vi kan bytte de ut med våre egne filer senere</p><br>
         <label for="img117">Sjekk hva ip-adressen til serveren er, med hostname -I</label><br><br>
         <img name="img117" src="Bilder/Screenshot_117.png" alt="Kommandoen returnerer ip-adressen til serveren"><br><br>
 
@@ -187,6 +203,7 @@
         <label for="img133">Nå kan du se din egen nettside ved å skrive inn domene-navnet ditt.</label><br><br>
         <img name="img133" src="Bilder/Screenshot_133.png" alt="Åpne nettleseren din, og skriv inn ditt domene-navn"><br><br>
 
+        <h2 id="upload">Laste opp dine egne filer til serveren</h2><br>
         <label for="img134">Bruk <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a> for å laste opp filene dine.<br><br>Trykk på new site, med protokoll SFTP. Host er IP-adressen til serveren din. På user og password, skriv inn brukernavn og passord på serveren.<br><br>Så trykker du på connect.</label><br><br>
         <img name="img134" src="Bilder/Screenshot_134.png" alt="Hjelpe illustrasjon for instruksjonene over"><br><br>
 

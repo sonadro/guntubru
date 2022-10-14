@@ -1,3 +1,14 @@
+/* FONTS */
+@font-face {
+    font-family: "Overpass";
+    src: url("Fonts/Overpass-Black.ttf");
+}
+
+@font-face {
+    font-family: "Kreon";
+    src: url("Fonts/Kreon-Regular.ttf");
+}
+
 body {
     background-color: rgb(37, 37, 37);
     color: white;
@@ -6,6 +17,11 @@ body {
 header {
     margin: 5px auto;
     text-align: center;
+    background-color: #444;
+    padding: 40px;
+    position: relative;
+    top: 100px;
+    border-bottom: 8px solid black;
 }
 
 div.setup {
@@ -17,14 +33,57 @@ div label, div p {
     font-size: 20px;
 }
 
-h2 {
-    font-size: 30px;
+nav {
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    padding: 24px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 8px solid black;
+    z-index: 2;
+}
+
+nav button {
+    color: black;
+    font-size: 20px;
+    margin-left: 16px;
+    border: 4px solid black;
+    padding: 12px;
+    border-radius: 12px;
     font-weight: bold;
+}
+
+nav button:hover {
+    color: white;
+    /* Gradient background */
+    background: hsla(188, 100%, 27%, 1);
+    background: linear-gradient(0deg, hsla(188, 100%, 27%, 1) 0%, hsla(200, 100%, 18%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(188, 100%, 27%, 1) 0%, hsla(200, 100%, 18%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(188, 100%, 27%, 1) 0%, hsla(200, 100%, 18%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00798c", endColorstr="#003d5b", GradientType=1 );
+    }
+
+h1 {
+    font-family: "Overpass", Fallback, sans-serif;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Overpass", Fallback, sans-serif;
 }
 
 div.apache {
     margin: 0 auto;
     text-align: center;
+}
+div.setup {
+    position: relative;
+    top: 100px;
 }
 
 div.setup img, div.apache img {
@@ -42,8 +101,8 @@ p.htmlKode, p.virtualHostKode {
     padding: 10px;
 }
 
-a {
-    color: cyan;
+p, label {
+    font-family: "Kreon", Fallback, sans-serif;
 }
 
 a:hover {
